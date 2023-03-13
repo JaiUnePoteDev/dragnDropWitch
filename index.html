@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
+
+    <title>Let's Drag n' Drop, Witch !</title>
+</head>
+<body>
+    <main id="gauche">
+
+        <div id="start"><img src="./assets/img/start.svg" alt="cliquer pour débuter le jeu"></div>
+
+        <h1>Utilise les Witch_Crafts dans le bon ordre</h1>
+
+        <div id="witchCraft-container">
+            <img src="./assets/img/cristal.svg" id="cristal" data-source-id="cristal" draggable="true" alt="cristal">
+            <img src="./assets/img/familier.svg" id="familier" data-source-id="familier" draggable="true" alt="familier">
+            <img src="./assets/img/livre.svg" id="livre" data-source-id="livre" draggable="true" alt="livre">
+            <img src="./assets/img/pentacle.svg" id="pentacle" data-source-id="pentacle" draggable="true" alt="pentacle">
+            <img src="./assets/img/plante.svg" id="plante" data-source-id="plante" draggable="true" alt="plante">
+            <img src="./assets/img/potion.svg" id="potion" data-source-id="potion" draggable="true" alt="potion">
+        </div>
+
+        <div id="drop-container">
+            <span data-target-id="plante">1</span>
+            <span data-target-id="livre">2</span>
+            <span data-target-id="pentacle">3</span>
+            <span data-target-id="familier">4</span>
+            <span data-target-id="cristal">5</span>
+            <span data-target-id="potion">6</span>       
+        </div>
+
+    </main>    
+    
+</body>
+</html>
